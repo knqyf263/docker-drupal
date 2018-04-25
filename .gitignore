@@ -1,4 +1,4 @@
-docker/drupal
+docker/*/drupal
 .csslintrc
 .editorconfig
 .eslintignore

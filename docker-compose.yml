@@ -1,10 +1,10 @@
 version: '3'
 services:
-  drupal:
-    build: ./docker
+  drupal-8.5.2:
+    build: ./docker/8.5.2
     volumes:
-      - ./docker/drupal:/var/www/html
-      - ./docker/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/8.5.2/drupal:/var/www/html
+      - ./docker/8.5.2/php.ini:/usr/local/etc/php/php.ini
     working_dir: /var/www/html
     ports:
       - "8000:80"
